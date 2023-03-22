@@ -45,22 +45,19 @@
 //CLASSES
 //they can have properties and methods, they support inheritance and they can be instanciated with new keyword.
 
+// with ES7, you can declare property directly inside a class without constructor
+
+// with ES7 you can assign a method to the class with arrow function, this is eliminate the use of ‘this’ keyword.
+
 // class Human{
-//     constructor(){
-//         this.gender = 'male';
-//     }
-//     printMyGender() {
-//         console.log(this.gender);
-//     }
+//     gender = 'Male'
+//     printMyGender = () => {console.log(this.gender)}
 // }
 
 // class Person extends Human{
-//     constructor(){
-//         super();
-//         this.name = 'Mustafa';
-//     }
-//     printMyName(){
-//         console.log(this.gender);
+//     name = 'Mustafa'
+//     printMyName = () => {
+//         console.log(this.name);
 //     }
 // }
 
@@ -68,3 +65,32 @@
 // person.printMyName();
 // person.printMyGender();
 
+//SPREAD AND REST OPERATORS
+
+// Spread: Used to split up array elemetns OR object properties
+// Eg: const newArray = [...oldArray,1,2,4]
+//     const newObject = {...oldObject, newProp: 5}
+
+//Rest: Used to merge a list of fucntion arguments into an array
+// Eg: function sortArgs(...args) { return args.sort()}
+
+// const numbers = [1,32,2,36,246,];
+// const newNumbers = [...numbers, 2355,25734]
+// console.log(newNumbers);
+
+// const person   = {
+//     name: 'John',
+// }
+
+// const newPerson = {
+//     ...person,
+//     date: 'asdar',
+// }
+
+// console.log(newPerson);
+
+// const filter = (...args) => {
+//     return args.filter(el => el === 1);
+// }
+
+// console.log(filter(1,2,3));
