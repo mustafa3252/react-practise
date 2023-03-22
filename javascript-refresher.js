@@ -45,14 +45,26 @@
 //CLASSES
 //they can have properties and methods, they support inheritance and they can be instanciated with new keyword.
 
-class Person{
-    constructor(){
-        this.name = 'Mustafa';
-    }
-    printMyName(){
-        console.log(this.name);
-    }
-}
+// class Human{
+//     constructor(){
+//         this.gender = 'male';
+//     }
+//     printMyGender() {
+//         console.log(this.gender);
+//     }
+// }
 
-const person = new Person();
-person.printMyName();
+// class Person extends Human{
+//     constructor(){
+//         super();
+//         this.name = 'Mustafa';
+//     }
+//     printMyName(){
+//         console.log(this.gender);
+//     }
+// }
+
+// const person = new Person();
+// person.printMyName();
+// person.printMyGender();
+
